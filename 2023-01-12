@@ -1,0 +1,147 @@
+#연산자
+# + - * /
+# % : 나머지 연산자
+# // : 몫 연산자
+# ** : 제곱 연산자
+
+# 3+4
+# 2*9
+# 5/2
+# 5%2
+# 5//2
+# 4**3
+
+#출력함수 print
+# print(출력할 값)
+
+
+# print(3+4)
+# print(2*9)
+# print(5/2)
+# print(5%2)
+# print(5//2)
+# print(4**3)
+
+#한 줄에 여러 값을 출력하는 방법
+# print(67,13)
+
+
+#변수=상자
+#변수의 이름 = 저장할 값
+# a = -3
+# b = 7
+# print(a+b)
+# print(a,b)
+
+
+#덮어 씌워진다
+# a = 4
+# a = 7
+# print(a)
+
+
+#변수간의 계산한 값을 다른 변수에 담을 수 있다
+# a = 9
+# b = 1
+# c = a+b+10
+# print(a,b,c)
+
+# 값을 그대로 가져올 수 있다
+# a = 2
+# b = a
+# print(a,b)
+
+#자기자신에게  연산가능
+# a = 4
+# a = a+1
+# print(a)
+
+#문제
+# 두 변수 a,b 를 선언한다
+# a는 3을, b는 7값을 저장한다
+# 두 변수에 저장되어 있는 값이 서로 바뀌게 하는 코드
+#주의 : 연산자사용 x, 상수로 덮어 씌우기 x
+
+# a = 3
+# b = 7
+# c = a
+# a = b
+# b = c
+# print(a,b)
+
+
+#문제2
+#세 변수 a,b,c를 선언한다
+#각각 3,6,9값을 저장한다
+# a는 c값, b는 a값, c는 b값을 저장하도록 바뀌게 하는 코드를 작성
+#주의전 동일
+
+# a = 3
+# b = 6
+# c = 9
+# d = a
+# a = c
+# c = b
+# b = d
+# print(a,b,c)
+
+# 문자열 - "",''
+# a = "hello"
+# print(a)
+
+
+
+#문자열간 계산 : +
+# a = "welcome"
+# b = "python"
+# print(a+b) 두 문자열이 붙어서 하나가 된다
+
+
+#문자열과 정수의 계산 : *
+# a = "hi"
+# b = 8
+# print(a*b) #문자열 복사됨
+
+
+# 자료형
+# 정수형 : int
+# 실수형 : float
+# 문자형 : str
+# bool : bool
+
+
+
+#자료형을 알려주는 함수 type
+# type 값
+
+
+# print(type(4))
+# print(type(3.1))
+# print(type("hi"))
+# print(type(True))
+
+
+#문자열 위치
+# str_test = "hello"
+# #h부터 0으로, 즉 0부터 순서를 따진다
+# print(str_test[4])
+# print(str_test[-1]) #음수좌표는 뒤에서 부터 세도록 한다
+
+#문자열 인덱싱, 슬라이싱
+str_test = "hello python!"
+
+#인덱싱 - 단일 대상
+#print(str_test[4])
+#print(str_test[100]) #범위 에러
+
+#슬라이싱 - 범위 지정
+print(str_test[1:5]) #[x:y] x번째 이상 y번째 미만
+print(str_test[:7]) # "0"부터는 생략가능
+print(str_test[6:100]) #범위를 벗어나도 끝까지 출력됨
+print(str_test[4:]) # "끝까지"는 생략가능
+
+print(str_test[3:10:2]) # 세번째 숫자를 명시해서 건너뛰어 슬라이싱 가능
+print(str_test[:8:3]) # 마찬가지로 생략가능
+print(str_test[3::5]) # 마찬가지로 생략가능
+print(str_test[::4]) # 두개다 생략가능
+print(str_test[::-1]) # 음수를 이용하여 뒤집기
