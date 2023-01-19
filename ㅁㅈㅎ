@@ -1,0 +1,160 @@
+# 문자열 welcame fo mython? 을 저장한다
+# 해당 문자열을 welcome to python! 으로 바꾸는 코드를 작성
+# 새로이 덮어 씌우는 것이 아닌, 문자열의 일부를 수정하도록 한다
+# str_test = "welcame fo mython?"
+# str_test2 = "p"
+# a = str_test[:4]
+# b = str_test[9]
+# c = str_test[5:8]
+# d = str_test[13]
+# e = str_test[9:11]
+# f = str_test2[0]
+# g = str_test[12:]
+# print(a+b+c+d+e+f+g
+
+# str_test = "welcame fo mython?"
+# print(str_test[:4]+"o"+str_test[5:8]+"t"+str_test[9:11]+"p"+str_test[12:17]+"!")
+
+
+# 제어문 - 조건문, 반복문
+
+# 조건 연산자
+# > < >= <=
+# == !=
+# and, or, not
+
+# 조건문 - if, else, elif
+#
+# if 조건:
+#     실행코드
+
+# a = 14
+# if a + 2 == 12:
+#     print(a/2)
+# elif a > 10:
+#     print("T")
+# else:
+#     print(a*4)
+# print("a")
+
+#if 조건
+#   실행 코드
+
+# if 조건:
+#    실행 코드
+# else:
+#    실행 코드
+
+
+#if 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+
+
+#if 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+#else:
+#   실행 코드
+
+
+
+#if 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+#....
+#else:
+#   실행 코드
+
+
+# 입력함수 input
+# input()
+# a = input()
+# print(a, type(a)) # 문자열로 입력받음
+
+# 정수 입력받기
+
+# a = int(input())
+# print(a, type(a))
+
+# input() 선출력 값 설정
+# input("문자열 입력 : ")
+
+
+# a = int(input())
+# if a >= 7 and a != 10:
+#     print(0)
+#     if a >= 12 or a * 2 == 30:
+#         print(1)
+#         if not a > 100:
+#             print(2)
+#         else:
+#             print(3)
+#     elif a == 10:
+#         print(4)
+#     else:
+#         print(5)
+# else:
+#     print(6)
+
+
+# a, b = map(int, input().split())
+# if not a > b:
+#     if a < b:
+#         print("<")
+#     if a == b:
+#         print("==")
+# else:
+#     print(">")
+#
+#
+# a = int(input())
+# b = int(input())
+# if a > b:
+#     print(">")
+# elif a < b:
+#     print("<")
+# else:
+#     print("==")
+
+# exam = int(input())
+# if 100 >= exam >= 90:
+#     print("A")
+# elif 90 > exam >= 80:
+#     print("B")
+# elif 80 > exam >= 70:
+#     print("C")
+# elif 70 > exam >= 60:
+#     print("D")
+# else:
+#     print("F")
+
+
+
+year = int(input())
+if year % 4 == 0:
+    if year % 400 == 0 or not year % 100 == 0:
+        print(1)
+    elif not year % 400 == 0:
+        print(0)
+else:
+    print(0)
+
+
+x = int(input())
+y = int(input())
+if x > 0 and y > 0:
+    print(1)
+elif x < 0 and y > 0:
+    print(2)
