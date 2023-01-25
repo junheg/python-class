@@ -1,0 +1,87 @@
+# year = int(input())
+# print(year-543)
+
+# a, b, c, d, e, f = map(int, input().split())
+#
+# chess = [a, b, c, d, e, f]
+#
+# chess_rull = [1, 1, 2, 2, 2, 8]
+#
+# for i in range(len(chess)):
+#
+#     chess[i] = chess_rull[i] - chess[i]
+#
+# print(*chess)
+
+# a, b, c = map(int, input().split())
+#
+# print((a+b)%c)
+# print(((a%c)+(b%c))%c)
+# print((a*b)%c)
+# print(((a%c)*(b%c))%c)
+#
+#
+# x = int(input())
+# y = int(input())
+# if x > 0 and y > 0:
+#     print(1)
+# elif x < 0 and y > 0:
+#     print(2)
+# elif x < 0 and y < 0:
+#     print(3)
+# elif x > 0 and y < 0:
+#     print(4)
+
+
+# H, M = map(int, input().split())
+#
+# if H > 0 and M < 45:
+#     print(H-1, 60-(45-M))
+# elif H == 0 and M < 45:
+#     print(23, 60-(45-M))
+# else:
+#     print(H, M-45)
+
+
+#A, B = map(int, input().split())
+#C = int(input())
+
+# if A >= 23:
+#     if B+(C%60) < 60:
+#         print(A+(C//60)-24, B+(C%60))
+#     else:
+#         print((B+(C%60))//60+A+(C//60)-24, (B+(C%60))%60)
+# elif A != 23 and B+(C%60) <= 60:
+#     print((B+(C%60))//60+A+(C//60), (B+(C%60))%60)
+# else:
+#print(((B+C)//60+A)%24, (B+C)%60)
+
+
+# a, b, c = map(int,input().split())
+#
+# if a == b == c:
+#     print(10000+(a*1000))
+# elif a == b != c:
+#     print(1000+(a*100))
+# elif a == c != b:
+#     print(1000+(a*100))
+# elif a != b == c:
+#     print(1000+(b*100))
+# elif a > b > c:
+#     print(a*100)
+# elif a > c > b:
+#     print(a*100)
+# elif b > a > c:
+#     print(b*100)
+# elif b > c > a:
+#     print(b*100)
+# else:
+#     print(c*100)
+
+
+# a = int(input())
+# b = list(map(int, list(input())))
+# print(a*b[2])
+# print(a*b[1])
+# print(a*b[0])
+# print(a*b[0]*100+a*b[1]*10+a*b[2])
