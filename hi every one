@@ -1,0 +1,135 @@
+# 반복문 - for, while
+
+# for문
+# for 변수 이름 in range(반복횟수):
+#     반복할 코드
+#     ~
+#     ~
+#     ~
+
+# for i in range(100):
+#     print("hello world")
+
+
+# for i in range(10): # 반복횟수(0부터 시작)
+#     print(i)
+
+
+# for i in range(3, 7): # 시작값(이상), 끝값(미만)
+#     print(i)
+
+
+# for i in range(2, 20, 3): # 시작값(이상), 끝값(미만), 증가량
+#     print(i)
+
+
+
+# while문
+# while 조건:
+#     반복 코드
+#     ~
+#     ~
+#     ~
+
+
+# a = 0
+# while a< 5:
+#     print(a)
+#     a += 1
+
+
+# 반복문 특수 코드
+# break : 반복문 탈출 코드
+# continue : 반복문 건너뛰기 코드
+
+# for i in range(10):
+#     print(i)
+#     if i == 4:
+#         break
+
+
+
+# for i in range(10):
+#     if i == 4:
+#         continue
+#     print(i)
+
+# while True:
+#     print("python")
+
+
+
+# N = int(input())
+# for i in range(N):
+#     print("*"*(i+1))
+
+
+# N = int(input())
+# for i in range(N):
+#     print(" "*(N-i-1)+"*"*(i+1))
+
+
+# N = int(input())
+# for i in range(N):
+#     print("*"*(N-i))
+
+
+# N = int(input())
+# for i in range(N):
+#     print(" "*i+"*"*(N-i))
+
+
+# N = int(input())
+# for i in range(N):
+#     print(" "*(N-i-1)+"*"*((i+1)*2-1))
+
+
+# N = int(input())
+# for i in range(N):
+#     print(" "*i+"*"*((N-i)*2-1))
+
+
+# N = int(input())
+# for i in range(N-1):
+#     print(" "*(N-i-1)+"*"*((i+1)*2-1))
+#     # if i == N-2:
+#     #     break
+# for i in range(N):
+#     print(" "*i+"*"*((N-i)*2-1))
+
+# N = int(input())
+# for i in range(N):
+#     print("*"*(i+1)+" "*2*(N-i-1)+"*"*(i+1))
+#     if i == N-2:
+#         break
+# for i in range(N):
+#     print("*"*(N-i)+" "*i*2+"*"*(N-i))
+
+
+# N = int(input())
+# for i in range(N):
+#     print(" "*i+"*"*((N-i)*2-1))
+#     if i == N-2:
+#         break
+# for i in range(N):
+#     print(" "*(N-i-1)+"*"*((i+1)*2-1))
+
+
+# format - 문자열
+# 함수 포멧, % 포멧, f-string
+
+# 함수 포멧
+# a = "hello {} my name is {} im {} years old".format("python","tom",14)
+# print(a)
+
+# % 포멧
+# a = "hello %s my name is %s im %d years old" % ("python","tom",14)
+# print(a)
+
+# f-string
+# b = "python"
+# c = "tom"
+# d = 14
+# a = f"hello {b} my name is {c} im {d} years old"
+# print(a)
+
