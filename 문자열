@@ -1,0 +1,96 @@
+# T = int(input())
+# for i in range(T):
+#     A, B = map(int, input().split())
+#     print(f"Case #{i+1}: {A+B}")
+
+
+# T = int(input())
+# for i in range(T):
+#     A, B = map(int, input().split())
+#     print(f"Case #{i+1}: {A} + {B} = {A+B}")
+
+
+# while True:
+#     A, B = map(int, input().split())
+#     if A + B == 0:
+#         break
+#     print(A+B)
+
+
+
+# N = int(input())
+# if N == 0:
+#     print(1)
+# else:
+#     a = N % 10 + N // 10
+#     a = (N % 10)*10 + a % 10
+#     c = 1
+#     while True:
+#         c += 1
+#         b = (a % 10 + a // 10)%10
+#         a = (a % 10)*10 + b % 10
+#         if a == N:
+#             break
+#     print(c)
+
+
+
+
+# 문자열 함수
+
+
+# upper, lower
+# test_str = "Hello Python!"
+# print(test_str.upper()) # 주어진 문자열을 대문자로 바꾸는 함수
+# print(test_str.lower()) # 주어진 믄자열을 소문자로 바꾸는 함수
+
+
+# count, find, index
+# test_str = "text for test"
+# print(test_str.count("t")) # 주어진 문자열 내에서 대상 문자열의 개수를 반환하는 함수
+# print(test_str.count("p")) # 대상 문자열이 존재하지 않을 경우 0 반환
+#
+# print(test_str.find("x")) # 주어진 문자열 내에서 대상 문자열의 위치를 반환하는 함수
+# print(test_str.index("x")) # 주어진 문자열 내에서 대상 문자열의 위치를 반환하는 함수
+#
+# # 두 함수는 왼쪽에서부터 탐색을 시행, 제일 처음 찾아낸 대상 문자열의 위치만 반환
+# print(test_str.find("t"))
+# print(test_str.index("t"))
+#
+#
+# print(test_str.find("p")) # 대상 문자열이 존재하지 않을 경우 -1 반환
+# print(test_str.index("p")) # 대상 문자열이 존재하지 않을 경우 에러 발생
+
+
+# isdigit, isalpha, isalum, isupper, islower
+# a = "Join 10x"
+# print(a.isdigit()) # 주어진 문자열이 숫자로만 이루어져 있을 경우 True 그렇지 않으면
+# print(a.isalpha()) # 주어진 문자열이 알파벳으로만 이루어져 있을 경우 True 그렇지 않으면
+# print(a.isalnum()) # 주어진 문자열이 숫자와 알파벳으로만 이루어져 있을 경우 True 그렇지 않으면
+# print(a.isupper()) # 주어진 문자열이 대문자로만 이루어져 있을 경우 True 그렇지 않으면
+# print(a.islower()) # 주어진 문자열이 소문자로만 이루어져 있을 경우 True 그렇지 않으면
+
+
+
+# # strip, lstrip, rstrip
+# a = "     welcome!      "
+# print(a.strip()) # 주어진 문자열 양쪽에 반복되는 대상 문자열을 제거하여 반환
+# print(a.lstrip()) # 주어진 문자열 왼쪽에 반복되는 대상 문자열을 제거하여 반환
+# print(a.rstrip()) # 주어진 문자열 오른쪽에 반복되는 대상 문자열을 제거하여 반환
+
+
+# replace, split, join
+# a = "you for me"
+# print(a.replace("for","and")) #문자열 재배치 함수
+# print(a.split()) # 문자열 분할 함수
+# print(",".join(a)) # 문자열 추가 함수
+
+
+
+
+ID = str(input())
+ID = ID.lower()
+
+while ".." in ID:
+    ID = ID.replace("..", ",")
+ID.lstrip(.) ID.rstrip(.)
