@@ -1,0 +1,45 @@
+# N = int(input())
+# for i in range(9):
+#     print(N, "*", (i+1), "=", N*(i+1))
+
+# T = int(input())
+# for i in range(T):
+#     A, B = map(int, input().split())
+#     print(A+B)
+
+
+# n = int(input())
+# print(n*(n+1)//2)
+
+# n = int(input())
+
+# for i in range(n-1):
+#     n = n+i
+#     i += 1
+#     a = n+i
+# print(a)
+
+# a = 0
+# for i in range(n):
+#     a += (i+1)
+# print(a)
+
+
+
+
+# X = int(input())
+# N = int(input())
+# Y = 0
+# for i in range(N):
+#     a, b = map(int, input().split())
+#     Y += a * b
+# if Y == X:
+#     print("Yes")
+# else:
+#     print("No")
+
+import sys
+T = int(input())
+for i in range(T):
+    a, b = map(int, sys.stdin.readline().rstrip().split())
+    print(a+b)
